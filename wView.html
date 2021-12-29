@@ -13,7 +13,7 @@
     <div class="col-md-3 mb-3">
         <label id="key"></label>
             <select class="custom-select" id="dropdown">
-                <option value="choose any one">`${app.renderMessage('choose-drop-down')}`</option>
+                <option value="choose any one">`${cc}`</option>
         </select>
     </div>
 
@@ -23,6 +23,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script>
+        let cc = app.renderMessage('choose-drop-down')
         const key = document.getElementById('key');
         const dropdown = document.getElementById('dropdown');
         let handleChange = (event) => {
